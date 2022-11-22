@@ -4,7 +4,7 @@
 
 ![PREVIEW](/assets/preview.png)
 
-[Clique aqui para acessar](https://herbertribeiro19.github.io/Relógio)
+[Clique aqui para acessar](https://herbertribeiro19.github.io/Relogio)
 
 ## Tecnologias utilizadas 👨‍💻
 - Html
