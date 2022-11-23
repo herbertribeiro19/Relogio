@@ -9,6 +9,8 @@
 body {
     height: 100vh;
     background: linear-gradient(120deg, #2b59ff, #cc02ff);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +20,7 @@ body {
     align-items: center;
     background: transparent;
     height: 200px;
-    width: 550px;
+    width: 700px;
     display: flex;
     justify-content: space-around;
     border-radius: 5px;
@@ -37,6 +39,12 @@ body {
     border-radius: 8px;
     box-shadow: 5px 5px 15px black;
     letter-spacing: 3px;
+    gap: 20px;
+}
+
+#horarioFormat {
+    color: white;
+    font-size: 30px;
 }
 
 .relogio span{
@@ -48,19 +56,29 @@ body {
     font-size: 15px;
 }
 
+.relogio div:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
 @media screen and (max-width: 414px) {
     .relogio{
-        height: 160px;
-        width: 400px;
+        height: 150px;
+        width: 390px;
         gap: 10px;
         padding: 2px;
     }
-
-    .relogio div{
-        height: 130px;
+                
+    .relogio div {
+        height: 110px;
         width: 300px;
-        padding: 2px;
     }
+                
+    #horarioFormat {
+        color: white;
+        font-size: 14px;
+    }
+
     .relogio span {
         font-weight: bolder;
         font-size: 40px;
@@ -68,6 +86,82 @@ body {
 
     .relogio span.tempo {
         font-size: 14px;
+    }
+}
+
+/* CALENDARIO */
+
+.calendario {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    height: 200px;
+    width: 700px;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px black;
+}
+
+.calendario div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px black;
+    letter-spacing: 3px;
+    gap: 20px;
+}
+
+#dataFormat{
+    color: white;
+    font-size: 30px;
+}
+
+.calendario span {
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.calendario span.data {
+    font-size: 15px;
+}
+
+.calendario div:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+@media screen and (max-width: 414px) {
+    .calendario {
+        height: 150px;
+        width: 390px;
+        gap: 10px;
+        padding: 2px;
+    }
+
+    .calendario div {
+        height: 110px;
+        width: 300px;
+    }
+
+    #dataFormat {
+        color: white;
+        font-size: 14px;
+    }
+
+    .calendario span {
+        font-weight: bolder;
+        font-size: 35px;
+    }
+
+    .calendario span.tempo {
+        font-size: 10px;
     }
 }
 

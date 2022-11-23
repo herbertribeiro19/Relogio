@@ -21,6 +21,25 @@ const relogio = setInterval(function time(){
     horas.textContent = hr;
     minutos.textContent = min;
     segundos.textContent = seg;
+})
 
+// FUNCAO PARA DATA
 
+const dia = document.getElementById('dia');
+const mes = document.getElementById('mes');
+const ano = document.getElementById('ano');
+
+const calendario = setInterval(function time(){
+    let dateToday = new Date();
+    let d = dateToday.getDate();
+    let m = dateToday.getMonth();
+    let a = dateToday.getFullYear();
+
+    if (m) {
+        m = m + 1;
+    }
+
+    dia.textContent = d;
+    mes.textContent = m;
+    ano.textContent = a;
 })
