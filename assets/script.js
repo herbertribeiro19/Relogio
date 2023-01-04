@@ -35,8 +35,16 @@ const calendario = setInterval(function time(){
     let m = dateToday.getMonth();
     let a = dateToday.getFullYear();
 
-    if (m) {
-        m = m + 1;
+    if (d<10) {
+        d = '0' + d;
+    }
+
+    if (m==0) {
+        m = 0+1;
+        m = '0' + m;
+    }
+    else if (m>=1){
+        m = '0' + m;
     }
 
     dia.textContent = d;
